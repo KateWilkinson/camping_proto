@@ -1,0 +1,1 @@
+var siteSearch = angular.module('SiteSearch', []);

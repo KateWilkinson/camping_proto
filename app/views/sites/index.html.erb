@@ -22,6 +22,21 @@
   </tbody>
 </table>
 
+<div ng-controller='SiteSearchController as siteSearchCtrl'>
+<form>
+  <input type='text' ng-model='siteEntry.name'>
+</form>
+
+{{siteEntry.name}}
+
+<ul ng-repeat='site in siteSearchCtrl.searchResult.items'>
+  <li>{{site.name}}</li>
+  <li>{{site.town}}</li>
+</ul>
+
+</div>
+
+
 <br>
 
 <%= link_to 'New Site', new_site_path %>
